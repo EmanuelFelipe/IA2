@@ -20,6 +20,7 @@ typedef struct populacao
 } populacao;
 
 int main() {
+    srand(time(NULL));
     individuo *begin = (individuo *)calloc(popIni,sizeof(individuo));
     for (int i = 0; i < popIni; i++){
         for(int j = 0; j < crom; j++){
